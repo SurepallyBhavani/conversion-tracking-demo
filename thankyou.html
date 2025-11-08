@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Conversion Complete</title>
+
+  <!-- ✅ Google Analytics 4 Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+
+    // Log a custom conversion event (optional)
+    gtag('event', 'conversion_complete', {
+      'event_category': 'engagement',
+      'event_label': 'Thank You Page Visit'
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 10%;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    }
+    h1 {
+      color: #28a745;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thank You!</h1>
+  <p>Your action has been successfully completed.</p>
+  <p>This page represents a <b>conversion event</b> in Google Analytics.</p>
+
+  <a href="index.html">← Go Back to Home</a>
+
+  <p style="margin-top:40px; color:gray;">© 2025 My Demo Analytics Site</p>
+</body>
+</html>

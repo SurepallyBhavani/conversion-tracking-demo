@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion Tracking Demo</title>
+  
+  <!-- ✅ Google Analytics 4 Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 10%;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Conversion Demo Site</h1>
+  <p>Click the button below to simulate a conversion action (e.g., form submission or purchase).</p>
+
+  <button onclick="window.location.href='thankyou.html'">Complete Action</button>
+
+  <p style="margin-top:40px; color:gray;">© 2025 My Demo Analytics Site</p>
+</body>
+</html>
